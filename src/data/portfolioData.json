@@ -1,0 +1,89 @@
+{
+  "profile": {
+    "name": "Ruthvik J",
+    "tagline": "Building Intelligent Systems for the AI-Driven Future",
+    "summary": "Software engineering and ML enthusiast focused on intelligent systems, scalable applications, and immersive developer experiences."
+  },
+  "projects": [
+    {
+      "id": "proj_1",
+      "title": "Intelligent Document Analyzer",
+      "description": "ML system that classifies documents and extracts structured insights from datasets.",
+      "techStack": ["Python", "PyTorch", "Pandas", "Scikit-learn"],
+      "metric": "94% Accuracy",
+      "category": "Machine Learning",
+      "color": "#8b5cf6",
+      "position": [2, 1, -4],
+      "weight": 1.3
+    },
+    {
+      "id": "proj_2",
+      "title": "Real-Time Data Dashboard",
+      "description": "Interactive dashboard visualizing streaming system metrics in real time.",
+      "techStack": ["React", "Next.js", "Node.js", "PostgreSQL"],
+      "metric": "20ms Latency",
+      "category": "Development",
+      "color": "#06b6d4",
+      "position": [-2, 0, -4],
+      "weight": 1.2
+    },
+    {
+      "id": "proj_3",
+      "title": "AI Paper Recommender",
+      "description": "Recommendation engine suggesting research papers using semantic similarity.",
+      "techStack": ["Python", "TensorFlow", "FAISS", "FastAPI"],
+      "metric": "10k+ Data Points",
+      "category": "Machine Learning",
+      "color": "#8b5cf6",
+      "position": [0, 2, -5],
+      "weight": 1.4
+    },
+    {
+      "id": "proj_4",
+      "title": "3D Interactive Portfolio",
+      "description": "Immersive developer portfolio with dynamic WebGL and 3D experiences.",
+      "techStack": ["React", "Three.js", "React Three Fiber", "Tailwind"],
+      "metric": "60FPS Render",
+      "category": "Development",
+      "color": "#06b6d4",
+      "position": [0, -1, -3],
+      "weight": 1.3
+    }
+  ],
+  "pipeline": [
+    {
+      "year": "2022",
+      "event": "University Start",
+      "details": "Started Software Engineering studies and programming foundations."
+    },
+    {
+      "year": "2023",
+      "event": "ML Exploration",
+      "details": "Built early machine learning models and data projects."
+    },
+    {
+      "year": "2024",
+      "event": "Open Source Work",
+      "details": "Contributed to developer tools and collaborative repositories."
+    },
+    {
+      "year": "2026",
+      "event": "Graduation Path",
+      "details": "Preparing for software engineering and ML roles."
+    }
+  ],
+  "skills": [
+    "Python",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "PyTorch",
+    "TensorFlow",
+    "PostgreSQL",
+    "MongoDB",
+    "Docker",
+    "Git",
+    "Three.js"
+  ]
+}

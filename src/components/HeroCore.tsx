@@ -8,7 +8,7 @@ export default function HeroCore() {
                 style={{
                     width: '1200px',
                     height: '1200px',
-                    transform: 'scale(0.45) translateX(36%) translateY(-40%)',
+                    transform: 'scale(0.45) translateX(31%) translateY(-40%)',
                     transformOrigin: 'center center',
                     display: 'flex'
                 }}

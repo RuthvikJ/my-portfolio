@@ -184,6 +184,7 @@ export default function ContactSection() {
 
         {/* Contact cards */}
         <div
+          className="mobile-contact-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",

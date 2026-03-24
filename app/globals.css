@@ -33,31 +33,190 @@ body {
     overflow-x: hidden;
   }
 
-  /* HERO FIX */
+  /* 1. HERO SECTION */
   .hero-container {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: flex-start !important;
     height: auto !important;
-    padding: 100px 20px 40px;
+    min-height: 100vh !important;
+    padding: 50px 20px 40px !important; /* Reduced excessive top empty space */
+    overflow-y: auto !important;
   }
 
-  /* SIDE PANELS FIX */
+  .mobile-sidebar {
+    position: static !important;
+    transform: none !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: center !important;
+    height: auto !important;
+    padding: 10px 0 !important;
+    margin-bottom: 20px !important;
+    gap: 28px !important;
+  }
+  
+  .mobile-sidebar-line {
+    display: none !important;
+  }
+
+  .mobile-nav {
+    justify-content: center !important;
+    padding: 12px 16px !important; /* Normalized spacing */
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+    position: static !important;
+    width: 100% !important;
+    margin-bottom: 24px !important; /* Proper distance to status text */
+  }
+
+  .mobile-hero-hud {
+    position: static !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important; /* Balanced gap between elements */
+    padding: 12px !important; /* Minimized extra space */
+  }
+
+  /* Side panels container */
+  .mobile-panels-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 16px !important;
+    margin-top: 32px !important; /* Pulled up closer perfectly */
+    position: static !important;
+  }
+
+  .mobile-panel-toggle {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 18px !important;
+    background: rgba(139, 92, 246, 0.1) !important;
+    border: 1px solid rgba(139, 92, 246, 0.3) !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-family: monospace !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    justify-content: center !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+  }
+
   .side-panel {
-    position: relative !important;
+    position: static !important;
     top: auto !important;
     left: auto !important;
     right: auto !important;
     width: 100% !important;
-    max-width: 320px;
-    margin: 20px auto;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+  
+  .mobile-hidden {
+    display: none !important;
   }
 
-  /* FORCE STACK FOR CARDS */
-  .flex {
+  /* 2. ABOUT SECTION */
+  .mobile-about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    text-align: center !important;
+    padding: 0 16px !important; /* Proper text breathing room */
+  }
+  
+  .mobile-about-buttons {
     flex-direction: column !important;
-    align-items: center !important;
+    width: 100% !important;
+    gap: 16px !important;
+  }
+  
+  .mobile-about-buttons > * {
+    width: 100% !important;
+    text-align: center !important;
   }
 
+  /* 3. MODULES / PROJECTS */
+  .mobile-modules-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important; /* Proper card separation */
+  }
+  .mobile-tabs {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .mobile-detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important; /* Decoupled inner grids */
+  }
+  .mobile-detail-grid-right {
+    order: -1 !important; /* Image on top */
+  }
+  .mobile-detail-image-box {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9 !important;
+  }
+
+  /* 4. CONTACT SECTION */
+  .mobile-contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important; /* Vertical gaps increased */
+  }
+  .mobile-contact-grid > a {
+    padding: 36px 24px !important; /* Generous inner bounds */
+  }
+
+  /* SECTION SPACING FIX */
+  section {
+    padding: 72px 20px !important; /* Symmetrical consistent flow */
+  }
+
+  /* TYPOGRAPHY */
+  h1 {
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0.05em !important;
+  }
+  h2 {
+    font-size: 26px !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0.08em !important;
+  }
+  p, .desc-text {
+    font-size: 15px !important; /* Boosted base text slightly */
+    line-height: 1.8 !important; /* Taller line height for fluidity */
+    letter-spacing: 0.03em !important;
+  }
+
+  /* TOUCH TARGETS & BUTTON PADDING */
+  .mobile-nav button {
+    padding: 12px 16px !important;
+    min-height: 48px !important;
+  }
+  .mobile-sidebar a {
+    padding: 12px !important;
+  }
+  .mobile-about-buttons > * {
+    min-height: 52px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 16px 24px !important; /* Solid button footprint */
+  }
+}
+
+/* Hide mobile-only things on desktop */
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+  .mobile-panel-toggle {
+    display: none !important;
+  }
 }

@@ -434,6 +434,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
 
         {/* Detail grid */}
         <div
+          className="mobile-detail-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
@@ -616,6 +617,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
 
           {/* RIGHT */}
           <div
+            className="mobile-detail-grid-right"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -796,6 +798,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
       transition={{ duration: 0.2 }}
     >
       <div
+        className="mobile-modules-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)",
@@ -1475,6 +1478,7 @@ export default function ModulesSection() {
 
         {/* ── Module Cards ─────────────────────────────────────────────────── */}
         <div
+          className="mobile-tabs"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",

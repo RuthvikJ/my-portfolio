@@ -56,7 +56,7 @@ export default function AboutSection() {
       </div>
 
       {/* Main content */}
-      <div style={{
+      <div className="mobile-about-grid" style={{
         maxWidth: '960px',
         width: '100%',
         display: 'grid',
@@ -118,14 +118,14 @@ export default function AboutSection() {
           </p>
 
           {/* CTA Buttons */}
-          <div style={{
+          <div className="mobile-about-buttons" style={{
             display: 'flex',
             gap: '16px',
             marginTop: '40px',
             flexWrap: 'wrap',
           }}>
             <motion.a
-              href="/Ruthvik_J_Resume.pdf"
+              href="/Ruthvik_J_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
@@ -173,6 +173,7 @@ export default function AboutSection() {
 
         {/* Right — Profile Photo */}
         <motion.div
+          className="mobile-about-photo"
           initial={{ opacity: 0, x: 40 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}

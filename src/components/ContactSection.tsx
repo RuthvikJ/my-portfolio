@@ -155,7 +155,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           style={{
             fontSize: "15px",
-            color: "rgba(255,255,255,0.4)",
+            color: "rgba(255,255,255,0.55)",
             fontFamily: "monospace",
             textAlign: "center",
             lineHeight: 1.8,
@@ -270,7 +270,7 @@ export default function ContactSection() {
               <div
                 style={{
                   fontSize: "18px",
-                  color: hovered === link.id ? "#ffffff" : "rgba(255,255,255,0.6)",
+                  color: hovered === link.id ? "#ffffff" : "rgba(255,255,255,0.75)",
                   fontFamily: "monospace",
                   letterSpacing: "0.1em",
                   fontWeight: 500,
@@ -285,7 +285,7 @@ export default function ContactSection() {
               <div
                 style={{
                   fontSize: "11px",
-                  color: "rgba(255,255,255,0.25)",
+                  color: "rgba(255,255,255,0.4)",
                   fontFamily: "monospace",
                   letterSpacing: "0.04em",
                   lineHeight: 1.5,
@@ -302,7 +302,7 @@ export default function ContactSection() {
                   fontSize: "11px",
                   color: hovered === link.id
                     ? link.color
-                    : "rgba(255,255,255,0.2)",
+                    : "rgba(255,255,255,0.35)",
                   fontFamily: "monospace",
                   letterSpacing: "0.06em",
                   transition: "color 0.2s ease",
@@ -318,7 +318,7 @@ export default function ContactSection() {
                   fontSize: "10px",
                   color: hovered === link.id
                     ? link.color
-                    : "rgba(255,255,255,0.15)",
+                    : "rgba(255,255,255,0.3)",
                   fontFamily: "monospace",
                   letterSpacing: "0.2em",
                   transition: "color 0.2s ease",
@@ -379,7 +379,7 @@ export default function ContactSection() {
           <span
             style={{
               fontSize: "11px",
-              color: "rgba(255,255,255,0.25)",
+              color: "rgba(255,255,255,0.4)",
               fontFamily: "monospace",
               letterSpacing: "0.2em",
             }}

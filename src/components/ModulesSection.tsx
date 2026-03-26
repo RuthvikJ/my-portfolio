@@ -25,7 +25,7 @@ const MODULES = [
           "Risk-based outputs using SVM, ELM, LSTM and BiLSTM models",
           "Retinal image classification via transfer learning",
         ],
-        color: "rgba(139, 92, 246, 0.65)",
+        color: "rgba(139, 92, 246, 0.7)",
         symbol: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
         image: "/projects/screening.png",
       },
@@ -41,7 +41,7 @@ const MODULES = [
           "Position sizing constraints, trading toggles and structured error handling",
           "Testnet validation confirming strategy stability and API reliability",
         ],
-        color: "rgba(0, 212, 255, 0.55)",
+        color: "rgba(0, 212, 255, 0.65)",
         symbol: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Binance_Logo.svg",
         image: "/projects/trading.png",
       },
@@ -279,7 +279,7 @@ function SquarePlaceholder({
         <div
           style={{
             fontSize: "8px",
-            color: "rgba(255,255,255,0.2)",
+            color: "rgba(255,255,255,0.3)",
             fontFamily: "monospace",
             letterSpacing: "0.15em",
             marginTop: "8px",
@@ -374,7 +374,7 @@ function WidePlaceholder({
       <div
         style={{
           fontSize: "10px",
-          color: "rgba(255,255,255,0.18)",
+          color: "rgba(255,255,255,0.3)",
           fontFamily: "monospace",
           letterSpacing: "0.2em",
           marginTop: "10px",
@@ -411,8 +411,8 @@ function ProjectsPanel({ data }: { data: any[] }) {
           style={{
             fontSize: "11px",
             color: btnHovered === "back"
-              ? "rgba(139, 92, 246, 0.9)"
-              : "rgba(139, 92, 246, 0.55)",
+              ? "rgba(139, 92, 246, 1)"
+              : "rgba(139, 92, 246, 0.9)",
             fontFamily: "monospace",
             letterSpacing: "0.2em",
             background: "none",
@@ -466,7 +466,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
             <div
               style={{
                 fontSize: "15px",
-                color: "rgba(255,255,255,0.5)",
+                color: "rgba(255,255,255,0.65)",
                 fontFamily: "monospace",
                 lineHeight: 1.85,
               }}
@@ -500,7 +500,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
               <span
                 style={{
                   fontSize: "12px",
-                  color: "rgba(0, 212, 255, 0.65)",
+                  color: "rgba(0, 212, 255, 0.75)",
                   fontFamily: "monospace",
                   lineHeight: 1.7,
                 }}
@@ -514,7 +514,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
               <div
                 style={{
                   fontSize: "16px",
-                  color: "rgba(139, 92, 246, 0.4)",
+                  color: "rgba(198, 163, 233, 0.98)",
                   fontFamily: "monospace",
                   letterSpacing: "0.28em",
                   marginBottom: "12px",
@@ -771,7 +771,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
                     <span
                       style={{
                         fontSize: "13px",
-                        color: "rgba(255,255,255,0.52)",
+                        color: "rgba(255,255,255,0.65)",
                         fontFamily: "monospace",
                         lineHeight: 1.7,
                       }}
@@ -895,7 +895,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
                 <div
                   style={{
                     fontSize: "8px",
-                    color: "rgba(255,255,255,0.15)",
+                    color: "rgba(255,255,255,0.25)",
                     fontFamily: "monospace",
                     letterSpacing: "0.15em",
                     marginTop: "8px",
@@ -933,7 +933,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
                   <div
                     style={{
                       fontSize: "13px",
-                      color: "rgba(255,255,255,0.42)",
+                      color: "rgba(255,255,255,0.55)",
                       fontFamily: "monospace",
                       lineHeight: 1.75,
                     }}
@@ -951,7 +951,7 @@ function ProjectsPanel({ data }: { data: any[] }) {
                     fontSize: "11px",
                     color: btnHovered === `details-${i}`
                       ? "rgba(139, 92, 246, 1)"
-                      : "rgba(139, 92, 246, 0.75)",
+                      : "rgba(139, 92, 246, 0.9)",
                     fontFamily: "monospace",
                     letterSpacing: "0.2em",
                     background: btnHovered === `details-${i}`
@@ -1012,7 +1012,7 @@ function SkillsPanel({ data }: { data: any[] }) {
             <div
               style={{
                 fontSize: "10px",
-                color: "rgba(139, 92, 246, 0.55)",
+                color: "rgba(139, 92, 246, 0.65)",
                 fontFamily: "monospace",
                 letterSpacing: "0.35em",
                 textTransform: "uppercase",
@@ -1111,8 +1111,8 @@ function SkillsPanel({ data }: { data: any[] }) {
                     style={{
                       fontSize: "11px",
                       color: isHovered
-                        ? "rgba(255,255,255,0.85)"
-                        : "rgba(255,255,255,0.45)",
+                        ? "rgba(255,255,255,0.9)"
+                        : "rgba(255,255,255,0.6)",
                       fontFamily: "monospace",
                       letterSpacing: "0.08em",
                       textAlign: "center",
@@ -1165,7 +1165,7 @@ function CertsPanel({ data }: { data: any[] }) {
             onClick={() => setSelectedCert(null)}
             style={{
               fontSize: "11px",
-              color: "rgba(139, 92, 246, 0.55)",
+              color: "rgba(139, 92, 246, 0.9)",
               fontFamily: "monospace",
               letterSpacing: "0.2em",
               background: "none",
@@ -1356,7 +1356,7 @@ function CertsPanel({ data }: { data: any[] }) {
                 onMouseLeave={() => setListHovered(i)}
                 style={{
                   fontSize: "11px",
-                  color: "rgba(139, 92, 246, 0.7)",
+                  color: "rgba(139, 92, 246, 0.9)",
                   fontFamily: "monospace",
                   letterSpacing: "0.18em",
                   background: "rgba(139, 92, 246, 0.05)",
@@ -1565,7 +1565,7 @@ export default function ModulesSection() {
                 <div
                   style={{
                     fontSize: "12px",
-                    color: "rgba(255,255,255,0.25)",
+                    color: "rgba(255,255,255,0.4)",
                     fontFamily: "monospace",
                     letterSpacing: "0.04em",
                     lineHeight: 1.55,
@@ -1673,8 +1673,8 @@ export default function ModulesSection() {
                     style={{
                       fontSize: "13px",
                       color: closeHovered
-                        ? "rgba(139, 92, 246, 0.85)"
-                        : "rgba(139, 92, 246, 0.45)",
+                        ? "rgba(139, 92, 246, 1)"
+                        : "rgba(139, 92, 246, 0.9)",
                       fontFamily: "monospace",
                       letterSpacing: "0.2em",
                       background: "none",

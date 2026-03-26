@@ -24,7 +24,8 @@ const customStyles = `
 
   .glass-panel {
     background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
+    will-change: transform, opacity;
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     padding: 16px;
@@ -40,6 +41,7 @@ const customStyles = `
     height: 10px;
     background: linear-gradient(to bottom, transparent, rgba(0, 212, 255, 0.4), transparent);
     animation: scanline 4s linear infinite;
+    will-change: transform;
     pointer-events: none;
     z-index: 50;
   }
@@ -102,7 +104,7 @@ export default function Page() {
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: 'rgba(255,255,255,0.7)',
+                  color: 'rgba(255,255,255,0.75)',
                   fontSize: '13px',
                   fontFamily: 'monospace',
                   letterSpacing: '0.25em',
@@ -184,11 +186,11 @@ export default function Page() {
               href="mailto:ruthvik.j04@gmail.com"
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               onMouseEnter={e => { e.currentTarget.style.color = 'rgba(139,92,246,0.9)'; }}
-              onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.3)'; }}
+              onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.45)'; }}
             >
               <span style={{
                 fontSize: '16px',
-                color: 'rgba(255,255,255,0.3)',
+                color: 'rgba(255,255,255,0.45)',
                 transition: 'color 0.2s ease',
                 lineHeight: 1,
               }}>
@@ -253,44 +255,18 @@ export default function Page() {
                   <span style={{ fontSize: '10px', color: '#00d4ff', fontWeight: 'bold', letterSpacing: '0.2em' }}>
                     SYSTEM_STATUS: ACTIVE
                   </span>
-                  <span style={{ fontSize: '8px', color: 'rgba(255,255,255,0.2)', letterSpacing: '0.1em' }}>
+                  <span style={{ fontSize: '8px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.1em' }}>
                     LATENCY: 24MS // PORT: 3000
                   </span>
                 </div>
               </div>
-              <div className="flex gap-8 text-[10px] tracking-[0.3em] text-white/40 pointer-events-auto">
+              <div className="flex gap-8 text-[10px] tracking-[0.3em] text-white/45 pointer-events-auto">
                 <span className="hover:text-[#00d4ff] cursor-pointer transition-colors">[ 01_PROJECTS ]</span>
                 <span className="hover:text-[#00d4ff] cursor-pointer transition-colors">[ 02_MODELS ]</span>
               </div>
             </nav>
 
             {/* BACKGROUND GLITCH TEXT */}
-            <div style={{
-              position: 'absolute',
-              top: '45%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 0,
-              pointerEvents: 'none',
-              whiteSpace: 'nowrap',
-              filter: 'blur(8px)',
-              opacity: 0.05,
-              animation: 'glitch 4s infinite'
-            }}>
-              <h1 style={{
-                fontSize: '7vw',
-                fontWeight: '900',
-                color: '#00d4ff',
-                textTransform: 'uppercase',
-                fontStyle: 'italic',
-                margin: 0,
-                lineHeight: '1',
-                textAlign: 'center'
-              }}>
-                Neural_Core
-              </h1>
-            </div>
-
             {/* FOREGROUND CUBE */}
             <div className="relative z-10" style={{ transform: 'translateY(-40px)' }}>
               <HeroCore />
@@ -326,7 +302,7 @@ export default function Page() {
                   OPERATOR_PROFILE
                 </div>
                 <div style={{ marginBottom: '10px' }}>
-                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.15em', marginBottom: '3px' }}>
+                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.15em', marginBottom: '3px' }}>
                     DESIGNATION
                   </div>
                   <div style={{ fontSize: '13px', color: '#ffffff', letterSpacing: '0.1em', fontWeight: 600 }}>
@@ -334,7 +310,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div style={{ marginBottom: '10px' }}>
-                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.15em', marginBottom: '3px' }}>
+                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.15em', marginBottom: '3px' }}>
                     FUNCTION
                   </div>
                   <div style={{ fontSize: '11px', color: '#00d4ff', letterSpacing: '0.1em' }}>
@@ -342,7 +318,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div style={{ marginBottom: '10px' }}>
-                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.15em', marginBottom: '6px' }}>
+                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.15em', marginBottom: '6px' }}>
                     FOCUS_AREAS
                   </div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -360,7 +336,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.15em', marginBottom: '3px' }}>
+                  <div style={{ fontSize: '9px', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.15em', marginBottom: '3px' }}>
                     STATUS
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -370,7 +346,7 @@ export default function Page() {
                       borderRadius: '50%',
                       boxShadow: '0 0 8px #00d4ff'
                     }} className="animate-pulse" />
-                    <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.7)', letterSpacing: '0.1em' }}>
+                    <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.8)', letterSpacing: '0.1em' }}>
                       {PORTFOLIO.status}
                     </span>
                   </div>
@@ -409,7 +385,7 @@ export default function Page() {
                       display: 'flex',
                       justifyContent: 'space-between',
                       fontSize: '11px',
-                      color: 'rgba(255,255,255,0.4)',
+                      color: 'rgba(255,255,255,0.5)',
                       letterSpacing: '0.1em',
                       marginBottom: '4px'
                     }}>

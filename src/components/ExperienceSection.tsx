@@ -106,7 +106,7 @@ export default function ExperienceSection() {
         >
           <div style={{
             fontSize: "10px",
-            color: "rgba(139, 92, 246, 0.35)",
+            color: "rgba(139, 92, 246, 0.55)",
             fontFamily: "monospace",
             letterSpacing: "0.5em",
             marginBottom: "16px",
@@ -247,7 +247,7 @@ export default function ExperienceSection() {
                         fontFamily: "monospace",
                         letterSpacing: "0.25em",
                         marginBottom: "6px",
-                        opacity: 0.7,
+                        opacity: 0.8,
                       }}>
                         {item.type}
                       </div>
@@ -267,13 +267,13 @@ export default function ExperienceSection() {
                         fontFamily: "monospace",
                         letterSpacing: "0.1em",
                         marginBottom: "8px",
-                        opacity: 0.7,
+                        opacity: 0.8,
                       }}>
                         {item.organization}
                       </div>
                       <div style={{
                         fontSize: "12px",
-                        color: "rgba(255,255,255,0.35)",
+                        color: "rgba(255,255,255,0.55)",
                         fontFamily: "monospace",
                         lineHeight: 1.7,
                       }}>
@@ -293,7 +293,7 @@ export default function ExperienceSection() {
                 }}>
                   <div style={{
                     fontSize: "10px",
-                    color: "rgba(255,255,255,0.5)",
+                    color: "rgba(255,255,255,0.65)",
                     fontFamily: "monospace",
                     letterSpacing: "0.1em",
                     fontWeight: 600,
@@ -342,7 +342,7 @@ export default function ExperienceSection() {
                         fontFamily: "monospace",
                         letterSpacing: "0.25em",
                         marginBottom: "6px",
-                        opacity: 0.7,
+                        opacity: 0.8,
                       }}>
                         {item.type}
                       </div>
@@ -362,13 +362,13 @@ export default function ExperienceSection() {
                         fontFamily: "monospace",
                         letterSpacing: "0.1em",
                         marginBottom: "8px",
-                        opacity: 0.7,
+                        opacity: 0.8,
                       }}>
                         {item.organization}
                       </div>
                       <div style={{
                         fontSize: "12px",
-                        color: "rgba(255,255,255,0.35)",
+                        color: "rgba(255,255,255,0.55)",
                         fontFamily: "monospace",
                         lineHeight: 1.7,
                       }}>

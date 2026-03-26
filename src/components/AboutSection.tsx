@@ -86,7 +86,7 @@ export default function AboutSection() {
 
           <div style={{
             fontSize: '13px',
-            color: 'rgba(0, 212, 255, 0.6)',
+            color: 'rgba(0, 212, 255, 0.7)',
             letterSpacing: '0.25em',
             marginBottom: '32px',
             fontFamily: 'monospace',
@@ -97,7 +97,7 @@ export default function AboutSection() {
 
           <p style={{
             fontSize: '15px',
-            color: 'rgba(255,255,255,0.55)',
+            color: 'rgba(255,255,255,0.70)',
             lineHeight: 2,
             margin: '0 0 20px 0',
             fontFamily: 'monospace',
@@ -109,7 +109,7 @@ export default function AboutSection() {
 
           <p style={{
             fontSize: '15px',
-            color: 'rgba(255,255,255,0.32)',
+            color: 'rgba(255,255,255,0.55)',
             lineHeight: 2,
             margin: 0,
             fontFamily: 'monospace',
@@ -134,7 +134,7 @@ export default function AboutSection() {
                 padding: '12px 32px',
                 background: 'rgba(139, 92, 246, 0.08)',
                 border: '1px solid rgba(139, 92, 246, 0.4)',
-                color: 'rgba(139, 92, 246, 0.9)',
+                color: 'rgba(139, 92, 246, 2)',
                 fontSize: '11px',
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -158,7 +158,7 @@ export default function AboutSection() {
                 padding: '12px 32px',
                 background: 'transparent',
                 border: '1px solid rgba(0, 212, 255, 0.25)',
-                color: 'rgba(0, 212, 255, 0.65)',
+                color: 'rgba(0, 212, 255, 0.9)',
                 fontSize: '11px',
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
@@ -195,7 +195,7 @@ export default function AboutSection() {
               inset: '-40px',
               borderRadius: '50%',
               background: 'radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, rgba(139, 92, 246, 0.08) 50%, transparent 75%)',
-              filter: 'blur(20px)',
+              filter: 'blur(16px)',
             }} />
 
             {/* Medium glow ring */}
@@ -204,7 +204,7 @@ export default function AboutSection() {
               inset: '-16px',
               borderRadius: '50%',
               background: 'radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%)',
-              filter: 'blur(8px)',
+              filter: 'blur(6px)',
             }} />
 
             {/* Photo */}
